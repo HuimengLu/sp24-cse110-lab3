@@ -167,7 +167,6 @@ form {
     margin-right: 10px;
 }
 
-
 /* Fonts */
 body {
     font-family: 'Roboto', sans-serif; /* Third-party font */
@@ -258,4 +257,36 @@ form fieldset {
 
 form fieldset legend {
     font-weight: bold;
+}
+
+/* Additional Selectors */
+/* Class Selector */
+.about-details {
+    font-style: italic;
+}
+
+/* ID Selector */
+#contact {
+    background-color: #f9f9f9;
+    padding: 2em;
+}
+
+/* Universal Selector */
+*:focus {
+    outline: 2px solid #007BFF;
+}
+
+/* Element Selector */
+input {
+    font-size: 1rem;
+}
+
+/* Attribute Selector */
+input[type="checkbox"][name="newsletter"] {
+    margin-top: 1em;
+}
+
+/* Pseudo-class Selector */
+button:focus {
+    background-color: #0056b3;
 }
