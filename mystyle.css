@@ -1,0 +1,261 @@
+/* General CSS Topics */
+/* Comments */
+/* Applying Colors */
+body {
+    background-color: #fbfbfb; /* Background color */
+    color: rgb(50, 50, 50); /* Text color */
+}
+
+h1 {
+    color: #3f3f3f; /* Main heading color */
+}
+
+h2 {
+    color: #2873d6; /* Heading 2 color */
+}
+
+h3 {
+    color: #2873d6b0; /* Heading 3 color */
+}
+
+span {
+    color: rgba(0, 0, 0, 0.245); /* Make span transparent */
+}
+
+/* CSS Variables & Fallbacks */
+:root {
+    --primary-color: rgba(0, 0, 0, 0.073);
+}
+
+header {
+    background-color: var(--primary-color, blue);
+}
+
+/* Background */
+footer {
+    background-color: rgba(0, 0, 0, 0.026);
+}
+
+/* Units */
+/* Relative Units */
+header,
+main,
+footer {
+    padding: 1.5rem 2.5rem;
+}
+
+nav {
+    width: 100%;
+}
+
+/* Absolute Units */
+ul {
+    margin-left: 10px;
+}
+
+/* Box Model */
+/* Margin */
+article {
+    margin: 1rem 0;
+}
+
+/* Padding */
+fieldset {
+    padding: 1rem;
+}
+
+/* Borders */
+input[type="text"],
+input[type="date"],
+input[name="os"],
+textarea,
+select {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5em;
+}
+
+/* Text */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Display */
+nav {
+    text-align: center; /* Center align navigation items */
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    margin: auto;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 30px; /* Add some horizontal spacing between nav items */
+}
+
+/* Sizing */
+input[type="text"],
+input[name="os"],
+textarea,
+select {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Position */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* Pseudo-class */
+button:hover {
+    background-color: #007bff9d;
+    color: white;
+}
+
+/* Layouts */
+/* Flexbox */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article {
+    flex: 1;
+}
+
+/* Grid */
+form {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Responsiveness */
+@media screen {
+    main {
+        margin: 1em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Availability Selection */
+.availability input[type="radio"],
+.availability label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+
+/* Fonts */
+body {
+    font-family: 'Roboto', sans-serif; /* Third-party font */
+}
+
+/* CSS Selectors */
+/* Class Selector */
+.nav-link {
+    font-weight: bold;
+}
+
+/* ID Selector */
+#aboutme {
+    border: 2px solid #007BFF;
+    padding: 1em;
+}
+
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+}
+
+/* Element Selector */
+button {
+    background-color: #007BFF;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5rem 2rem;
+    display: block; /* Make the button a block-level element to center-align */
+    margin: auto; /* Center the block-level button */
+    margin-top: 1.5rem;
+}
+
+/* Attribute Selector */
+input[type="radio"]:checked + label {
+    font-weight: bold;
+}
+
+/* Pseudo-class Selector */
+button:active {
+    background-color: #0056b3;
+}
+
+/* Selector List */
+h1, h2 {
+    text-align: center;
+}
+
+/* Combinators */
+/* Descendant Combinator */
+main article {
+    border-bottom: 1px solid #ccc;
+}
+
+/* Child Combinator */
+nav > ul {
+    list-style-type: none;
+}
+
+/* General sibling combinator */
+input[type="text"] ~ label {
+    color: rgba(12, 12, 12, 0.8);
+}
+
+/* Adjacent sibling combinator */
+label + input, 
+select, 
+input[name="os"], 
+input[type="radio"],
+textarea{
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+/* Combining Two Selectors */
+header h1 {
+    font-size: 2em;
+}
+
+/* New Selectors */
+/* :has() */
+/* This selector is not widely supported yet */
+/* Nested Selectors */
+form fieldset {
+    border: none;
+}
+
+form fieldset legend {
+    font-weight: bold;
+}

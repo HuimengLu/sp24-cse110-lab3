@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Huimeng's first webpage</title>
     <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="mystyle.css">
 </head>
 <body>
     <header>
         <h1>Welcome to Huimeng's HTML Playground</h1>
         <nav>
             <ul>
-                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#aboutme">About me</a></li>
                 <li><a href="#contact">Reach out</a></li>
             </ul>
         </nav>
@@ -58,7 +59,7 @@
                     <label for="dob">Date of Birth:</label>
                     <input type="date" id="dob" name="dob"><br>
         
-                    <p>Availability:</p>
+                    <label for="availability">Availability:</label>
                     <input type="radio" id="morning" name="availability" value="morning">
                     <label for="morning">Morning</label>
                     <input type="radio" id="afternoon" name="availability" value="afternoon">
@@ -79,7 +80,7 @@
                         <option value="social">Social media</option>
                     </select><br>
         
-                    <p>Operating System:</p>
+                    <label for="os">Operating System:</label>
                     <datalist id="os">
                         <option value="Windows"></option>
                         <option value="MacOS"></option>
@@ -94,13 +95,12 @@
     </main>
 
     <footer>
-        <hr>
         <p>Connect anytime at <a href="mailto:hul020@ucsd.edu">hul020@ucsd.edu</a></p>
         <span>Copyright © 2024 Simple HTML Website</span>
     </footer>
 
-    <div>
-        <span>This is a span element.</span>
+    <div> <!-- Inline CSS -->
+        <span style="color: rgba(0, 0, 255, 0);">This is a span element.</span>
     </div>
 
 </body>
