@@ -1,5 +1,3 @@
-/* General CSS Topics */
-/* Comments */
 /* Applying Colors */
 body {
     background-color: #fbfbfb; /* Background color */
@@ -248,8 +246,6 @@ header h1 {
 }
 
 /* New Selectors */
-/* :has() */
-/* This selector is not widely supported yet */
 /* Nested Selectors */
 form fieldset {
     border: none;
